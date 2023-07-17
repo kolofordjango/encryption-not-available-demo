@@ -17,7 +17,11 @@ async function main() {
 			version: "insiders",
 			extensionDevelopmentPath,
 			extensionTestsPath,
-			launchArgs: ["--disable-gpu", "--disable-keytar"]
+			launchArgs: [
+				"--disable-gpu",
+				"--disable-keytar",
+				'--password-store="basic"',
+			]
 		});
 	} catch (err) {
 		console.error('Failed to run tests', err);

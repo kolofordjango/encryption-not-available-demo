@@ -19,7 +19,6 @@ async function main() {
 			extensionTestsPath,
 			launchArgs: [
 				"--disable-gpu",
-				"--disable-keytar",
 				'--password-store="basic"',
 			]
 		});

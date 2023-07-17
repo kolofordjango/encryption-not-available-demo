@@ -18,8 +18,10 @@ suite('Extension Test Suite', () => {
 
 		assert.ok(ext.isActive);
 
-		context.secrets.store("test", "test");
+		context.secrets.store("hello", "world");
 
 		assert.strictEqual(1+1,2);
+
+		assert.strictEqual(context.secrets.get("hello"), "world");
 	});
 });

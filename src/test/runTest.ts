@@ -20,7 +20,7 @@ async function main() {
 			launchArgs: [
 				"--disable-gpu",
 				"--disable-keytar",
-				'--password-store="basic"',
+				'--password-store=basic',
 			]
 		});
 	} catch (err) {
